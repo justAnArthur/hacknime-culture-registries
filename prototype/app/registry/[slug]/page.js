@@ -27,10 +27,10 @@ export default function ManagedRegister({ params: { slug } }) {
   }
 
   return <div className="flex flex-col gap-6">
-    <div className="flex gap-[inherit]">
+    <div className="flex flex-col md:flex-row gap-[inherit]">
       {slug && <RegisterTable slug={slug} />}
 
-      <div className="flex flex-col gap-[inherit] w-[25rem]">
+      <div className="flex flex-col gap-[inherit] w-full md:w-[25rem]">
         <Card className="overflow-hidden">
           <Accordion type="single" collapsible>
             <AccordionItem value="some">

@@ -120,7 +120,7 @@ export const Attribute = ({ attribute, readOnly, onAdd }) => {
       </AttributeTypeSelector>}
     </div>
 
-  return <div className="min-w-[20rem]">
+  return <div className="min-w-[15rem] md:min-w-[20rem]">
     <div className="flex items-center gap-4 p-2 justify-between">
       <h5>
         {attribute.name}
@@ -153,7 +153,7 @@ export const AttributeField = ({ attribute }) => {
 
   switch (attribute.type) {
     case "string":
-      return <div className="p-3 min-w-[20rem] space-y-2">
+      return <div className="p-3 min-w-[15rem] md:min-w-[20rem] space-y-2">
         <div className="flex gap-3 items-center">
           <Label>{attribute.name}</Label>
 
@@ -179,12 +179,12 @@ export const AttributeField = ({ attribute }) => {
         <Input type="text" />
       </div>
     case "number":
-      return <div className="p-3 min-w-[20rem] space-y-2">
+      return <div className="p-3 min-w-[15rem] md:min-w-[20rem] space-y-2">
         <Label>{attribute.name}</Label>
         <Input type="number" />
       </div>
     case "boolean":
-      return <div className="flex items-start gap-2 p-3 min-w-[20rem]">
+      return <div className="flex items-start gap-2 p-3 min-w-[15rem] md:min-w-[20rem]">
         <Label>{attribute.name}</Label>
         <Input type="checkbox" className="w-4 h-4" />
       </div>

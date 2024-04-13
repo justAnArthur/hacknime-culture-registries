@@ -11,7 +11,7 @@ export default function AddNewToRegistry({ params: { slug } }) {
   const { attributes = [] } = useRegisterContext()[slug] || {}
 
   return <div className="flex flex-col gap-6">
-    <div className="flex gap-[inherit]">
+    <div className="flex flex-col md:flex-row gap-[inherit]">
       <Card>
         <CardHeader className="pl-3 py-3">
           <CardTitle>
@@ -27,7 +27,7 @@ export default function AddNewToRegistry({ params: { slug } }) {
         </CardContent>
       </Card>
 
-      <div className="flex flex-col gap-[inherit] w-[25rem]">
+      <div className="flex flex-col gap-[inherit] w-full md:w-[25rem]">
         <Card>
           <CardHeader className="pl-3 py-3">
             <CardTitle>
